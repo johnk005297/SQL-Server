@@ -1,3 +1,5 @@
+-- Выгрузка пользователей из базы с указанием хэша пароля и статуса УЗ
+
 select l.LoginName Users, 
 case
 	when l.passwordHash = 'vFRQPemIV0HURsKLTF+tO+8uBkI=' then 'qqq111'
