@@ -1,4 +1,6 @@
 
+-- Запрос выгружает пользователей с конкретными правами в системе
+
 
 select l.loginname HoldingAdmins, 
 case 
