@@ -15,6 +15,6 @@ case
 	when u.Blocked = 1 then 'BLOCKED'
 	else 'active'
 end Status
- from boardmaps_Logins l 
- inner join boardmaps_Users u
+ from company_Logins l 
+ inner join company_Users u
  on u.Id = l.UserId;
