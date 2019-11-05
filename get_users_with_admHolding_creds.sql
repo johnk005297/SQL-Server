@@ -10,7 +10,7 @@ when l.passwordHash = 'LA4qU++A26qKuOlXFZVrTl1itpQ=' then 'www222'
 when l.passwordHash = '3q/vHsQzO5UwbOTSdg7AJw75q0c=' then 'admin123'
 when l.passwordHash = '3QHrhRk2AGx8op4NtDTzDZoTGzs=' then 'Admdemo'
 else l.passwordHash
-end passwordOrHash,
+end passwordHash,
   l.Discriminator,
 case
 when u.Deleted = 1 then 'DELETED'
