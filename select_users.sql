@@ -9,7 +9,7 @@ case
 	when l.passwordHash = '3q/vHsQzO5UwbOTSdg7AJw75q0c=' then 'admin123'
 	when l.passwordHash = '3QHrhRk2AGx8op4NtDTzDZoTGzs=' then 'Admdemo'
 	else l.passwordHash
-end passwordOrHash, Discriminator, 
+end passwordHash, Discriminator, 
 case
 	when u.Deleted = 1 then 'DELETED'
 	when u.Blocked = 1 then 'BLOCKED'
