@@ -25,6 +25,6 @@ inner join
     where a.RoleId =
       (select id from company_RoleModel_RoleTypes 
         where BuiltinType = 'HoldingAdministrator' and HoldingId is not null ) and a.Deleted = 0 group by a.UserId ) r
-        on r.UserId = l.UserId
+on r.UserId = l.UserId
 order by Status;
 
